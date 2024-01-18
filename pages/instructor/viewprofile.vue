@@ -32,11 +32,11 @@
         </div>
       </div>
 
-      <div class="profile-title-image w-[50%] flex flex-col items-center">
+      <div class="profile-title-image w-[50%] flex flex-col items-center justify-center">
         <div class="profile-image">
           <img :src="profileImage" class="h-[100%] w-[100%] object-cover" alt="image" />
         </div>
-        <div class="mt-[1rem]">
+        <div class="mt-[1rem] flex flex-col items-center justify-center">
           <div class="mb-[1rem]">
             <button class="btn">
               <Icon
@@ -55,6 +55,11 @@
             <button class="btn">
               <Icon name="simple-icons:x" class="font-bold text-lg icon mr-[0.3rem]" />
               <p>Twitter</p>
+            </button>
+          </div>
+          <div class="mb-[1rem]">
+            <button class="btn" style="width: 200px">
+              <p>Change password</p>
             </button>
           </div>
         </div>
@@ -129,8 +134,6 @@ export default {
   p {
     font-weight: 400;
   }
-}
-.edit-button {
 }
 
 .edit-link {

@@ -9,7 +9,6 @@
       <div class="stats-box">
         <div class="px-[2%]">
           <p class="font-bold text-4xl">Total</p>
-          <p class="text-slate-500">This month</p>
         </div>
         <div class="px-[2%]">
           <p class="text-xl font-bold">Revenue</p>
@@ -65,6 +64,7 @@ const courses = ref([
 }
 .stats-box {
   display: flex;
+  align-items: center;
   margin-bottom: 1rem;
 }
 .course-wrapper {
