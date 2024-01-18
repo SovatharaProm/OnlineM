@@ -1,6 +1,5 @@
 <template>
   <div class="py-[2%]">
-  
     <div class="intro-card">
       <div><p class="font-bold text-4xl mb-4">Welcome back, User!</p></div>
       <div><p>Keep it up and improve your progress.</p></div>
@@ -26,7 +25,9 @@
 
       <div v-for="(course, index) in courses" :key="index" class="course-wrapper">
         <div class="highlight"></div>
-        <div><p>{{ course.name }}</p></div>
+        <div>
+          <p>{{ course.name }}</p>
+        </div>
         <div></div>
       </div>
     </div>
@@ -44,7 +45,6 @@ const courses = ref([
   { id: 3, name: 'Web Development' },
   { id: 4, name: 'Web Development' },
   { id: 5, name: 'Web Development' },
-
 ]);
 </script>
 
@@ -70,7 +70,7 @@ const courses = ref([
 .course-wrapper {
   position: relative;
   width: 100%;
-  padding: 1.5rem; 
+  padding: 1.5rem;
   margin-bottom: 1rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 6px;

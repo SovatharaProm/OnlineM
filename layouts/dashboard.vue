@@ -3,24 +3,13 @@
     <div class="drawer">
       <div>
         <div>
-          <h1
-            class="font-bold text-center text-[#2B348F] text-2xl py-[2rem] px-[1rem]"
-          >
+          <h1 class="font-bold text-center text-[#2B348F] text-2xl py-[2rem] px-[1rem]">
             Paragon Academy
           </h1>
         </div>
         <ul>
-          <router-link
-            to="/instructor"
-            tag="li"
-            class="router-link"
-            exact
-            active-class="active-link"
-          >
-            <Icon
-              name="material-symbols:home-rounded"
-              class="font-bold text-4xl icon"
-            />
+          <router-link to="/" tag="li" class="router-link" exact active-class="active-link">
+            <Icon name="material-symbols:home-rounded" class="font-bold text-4xl icon" />
             Home
           </router-link>
           <router-link
@@ -28,12 +17,8 @@
             tag="li"
             class="router-link"
             exact
-            active-class="active-link"
-          >
-            <Icon
-              name="material-symbols:book-4"
-              class="font-bold text-4xl icon"
-            />
+            active-class="active-link">
+            <Icon name="material-symbols:book-4" class="font-bold text-4xl icon" />
             Courses
           </router-link>
           <router-link
@@ -41,12 +26,8 @@
             tag="li"
             class="router-link"
             exact
-            active-class="active-link"
-          >
-            <Icon
-              name="material-symbols:account-circle-outline"
-              class="font-bold text-4xl icon"
-            />
+            active-class="active-link">
+            <Icon name="material-symbols:account-circle-outline" class="font-bold text-4xl icon" />
             Profile
           </router-link>
         </ul>
@@ -65,8 +46,7 @@
           <img
             src="https://docs.material-tailwind.com/img/face-2.jpg"
             alt="avatar"
-            class="relative inline-block h-10 w-10 rounded-[9px] object-cover object-center"
-          />
+            class="relative inline-block h-10 w-10 rounded-[9px] object-cover object-center" />
         </div>
         <div><span class="font-bold text-xl">User Profile</span></div>
       </div>
@@ -78,12 +58,11 @@
 <script></script>
 
 <style scoped>
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta:wght@400;700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta:wght@400;700&display=swap');
 
 .font-bold {
   font-weight: 700;
-  font-family: "Plus Jakarta", sans-serif;
+  font-family: 'Plus Jakarta', sans-serif;
 }
 
 .text-center {
@@ -110,12 +89,10 @@
     flex-direction: column;
     justify-content: center;
     li {
-     
       font-weight: bold;
       font-size: 1.3rem;
       color: #8a8a8a;
       display: flex;
-     
     }
   }
 }
@@ -154,13 +131,13 @@
 }
 
 .router-link {
-  list-style: none; 
-  display: flex; 
-  align-items: center; 
-  padding: 0.5rem 20%; 
-  cursor: pointer; 
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 20%;
+  cursor: pointer;
   transition: background-color 0.3s ease;
-  color: #8a8a8a; 
+  color: #8a8a8a;
   border-left: 5px solid #fff;
 }
 
@@ -169,7 +146,7 @@
 }
 .router-link .icon {
   margin-right: 0.5rem;
-  font-size: 2rem; 
+  font-size: 2rem;
 }
 .router-link li {
   font-weight: bold;
